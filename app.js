@@ -14,6 +14,7 @@ const o1 = {
 
 const o2 = deepCloneObject(o1);
 o1.b.c = 'cc';
-console.log(o1.b.c === o1.b.c ? `wrong` : `right`);
+o1.b.f.g = 'gg';
+console.log(o1.b.c === o2.b.c ? `wrong` : `right`);
 console.log(`o1`, o1);
 console.log(`o2`, o2);
